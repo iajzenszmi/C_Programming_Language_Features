@@ -1,0 +1,52 @@
+bard.google.com generated the code
+A program demonstrating features of C
+View other drafts
+
+Sure, here is a C program that demonstrates some of the key features of the language:
+C
+
+#include <stdio.h>
+
+// This function calculates the factorial of a number.
+int factorial(int n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+int main() {
+  int n;
+  
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  
+  int result = factorial(n);
+  
+  printf("The factorial of %d is %d.\n", n, result);
+  
+  return 0;
+}
+
+Use code with caution. Learn more
+
+This program demonstrates the following features of C:
+
+    Functions: The factorial() function is a user-defined function that calculates the factorial of a number.
+    Control flow: The if statement is used to check if the number is 0. If it is, the function returns 1. Otherwise, the function recursively calls itself to calculate the factorial of the number minus 1 and then multiplies that result by the number.
+    Variables: The variables n and result are used to store the number entered by the user and the factorial of that number, respectively.
+    Input and output: The printf() function is used to print a message to the console. The scanf() function is used to read a number from the console.
+
+This is just a simple example, but it demonstrates some of the key features of C. There are many other features of C that could be demonstrated in a program.
+
+Here is the output of the program when it is run:
+
+Enter a number: 5
+The factorial of 5 is 120.
+
+I hope this helps!
+Sources
+
+    github.com/TejasBhovad/practicals 
+
