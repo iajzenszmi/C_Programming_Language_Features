@@ -1,0 +1,63 @@
+ian@ian-HP-Convertible-x360-11-ab1XX:~$ gcc cfeatures.c
+ian@ian-HP-Convertible-x360-11-ab1XX:~$ ./a.out
+Enter a number: 4
+The factorial of 4 is 24.
+ian@ian-HP-Convertible-x360-11-ab1XX:~$ cat cfeatures.c
+#include <stdio.h>
+
+// This function calculates the factorial of a number.
+int factorial(int n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+int main() {
+  int n;
+  
+  printf("Enter a number: ");
+  scanf("%d", &n);
+  
+  int result = factorial(n);
+  
+  printf("The factorial of %d is %d.\n", n, result);
+  
+  return 0;
+}
+
+ian@ian-HP-Convertible-x360-11-ab1XX:~$ sloccount cfeatures.c
+Have a non-directory at the top, so creating directory top_dir
+Adding /home/ian/cfeatures.c to top_dir
+Categorizing files.
+Finding a working MD5 command....
+Found a working MD5 command.
+Computing results.
+
+
+SLOC	Directory	SLOC-by-Language (Sorted)
+16      top_dir         ansic=16
+
+
+Totals grouped by language (dominant language first):
+ansic:           16 (100.00%)
+
+
+
+
+Total Physical Source Lines of Code (SLOC)                = 16
+Development Effort Estimate, Person-Years (Person-Months) = 0.00 (0.03)
+ (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
+Schedule Estimate, Years (Months)                         = 0.06 (0.67)
+ (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)  = 0.05
+Total Estimated Cost to Develop                           = $ 352
+ (average salary = $56,286/year, overhead = 2.40).
+SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
+SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
+SLOCCount comes with ABSOLUTELY NO WARRANTY, and you are welcome to
+redistribute it under certain conditions as specified by the GNU GPL license;
+see the documentation for details.
+Please credit this data as "generated using David A. Wheeler's 'SLOCCount'."
+ian@ian-HP-Convertible-x360-11-ab1XX:~$ 
